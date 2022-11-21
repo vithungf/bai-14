@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhap so can check"))
+    function isprime() {
+        let a = 0;
+        if ( number == 0){
+            alert(number + "đây k là số nguyên tố")
+        }else{
+            for (let i = 0; i <= number; i ++){
+                if (number % i ==0){
+                    a+= 1;
+                }
+            }
+            if ( a == 2){
+                alert( number+"la so nguyen to")
+            }else {
+                alert( number + " ko phai so nguyen to")
+            }
+        }
+    }
+isprime();
+
+</script>
+</body>
+</html>
